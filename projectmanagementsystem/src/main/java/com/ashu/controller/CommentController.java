@@ -19,10 +19,8 @@ import java.util.List;
 public class CommentController {
     @Autowired
     private CommentService commentService;
-
     @Autowired
     private UserService userService;
-
     public ResponseEntity<Comment>createComment(
             @RequestBody CreateCommentRequest req,
             @RequestHeader("Authorization") String jwt

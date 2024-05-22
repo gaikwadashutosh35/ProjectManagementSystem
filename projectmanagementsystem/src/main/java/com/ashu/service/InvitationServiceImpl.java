@@ -16,13 +16,13 @@ public class InvitationServiceImpl implements InvitationService{
     @Autowired
     private EmailService emailService;
     @Override
-    public void sendInvitation(String email, Long profileId) throws MessagingException {
+    public void sendInvitation(String email, Long projectId) throws MessagingException {
 
         String invitationToken = UUID.randomUUID().toString();
 
         Invitation invitation = new Invitation();
         invitation.setEmail(email);
-        invitation.setProjectId(profileId);
+        invitation.setProjectId(projectId);
         invitation.setToken(invitationToken);
 
         invitationRepository.save(invitation);

@@ -5,7 +5,7 @@ import jakarta.mail.MessagingException;
 
 public interface InvitationService {
 
-    public void sendInvitation(String email, Long profileId) throws MessagingException;
+    public void sendInvitation(String email, Long projectId) throws MessagingException;
 
     public Invitation acceptInvitation(String token, Long UserId) throws Exception;
 

@@ -16,13 +16,10 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/messages")
 public class MessageController {
-
     @Autowired
     private MessageService messageService;
-
     @Autowired
     private UserService userService;
-
     @Autowired
     private ProjectService projectService;
 

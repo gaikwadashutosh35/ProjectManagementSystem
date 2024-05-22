@@ -1,8 +1,8 @@
 package com.ashu.modal;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.Data;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +15,8 @@ public class User {
 
         private String fullName;
         private String email;
+        
+        @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
         private String password;
 
         @OneToMany(mappedBy = "assignee", cascade = CascadeType.ALL)

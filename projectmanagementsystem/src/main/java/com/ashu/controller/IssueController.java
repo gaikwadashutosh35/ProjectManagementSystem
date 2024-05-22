@@ -4,7 +4,6 @@ import com.ashu.DTO.IssueDTO;
 import com.ashu.modal.Issue;
 import com.ashu.modal.User;
 import com.ashu.request.IssueRequest;
-import com.ashu.response.AuthResponse;
 import com.ashu.response.MessageResponse;
 import com.ashu.service.IssueService;
 import com.ashu.service.UserService;
@@ -15,26 +14,21 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping
+@RequestMapping("/api/issues")
 public class IssueController {
-
     @Autowired
     private IssueService issueService;
-
     @Autowired
     private UserService userService;
-
     @GetMapping("/{issueId}")
     public ResponseEntity<Issue>getIssueById(@PathVariable Long issueId) throws Exception{
         return ResponseEntity.ok(issueService.getIssueById(issueId));
     }
-
     @GetMapping("/project/{projectId}")
     public ResponseEntity<List<Issue>>getIssueByProjectId(@PathVariable Long projectId)
         throws Exception{
         return ResponseEntity.ok(issueService.getIssueByProjectId(projectId));
     }
-
     @PostMapping
     public ResponseEntity<IssueDTO>createIssue(@RequestBody IssueRequest issue,
                                                @RequestHeader ("Authorization")String token)
@@ -50,6 +44,7 @@ public class IssueController {
         issueDTO.setId(createdIssue.getId());
         issueDTO.setPriority(createdIssue.getPriority());
         issueDTO.setProject(createdIssue.getProject());
+        issueDTO.setProjectID(createdIssue.getProjectID());
         issueDTO.setStatus(createdIssue.getStatus());
         issueDTO.setTitle(createdIssue.getTitle());
         issueDTO.setAssignee(createdIssue.getAssignee());
@@ -71,16 +66,19 @@ public class IssueController {
         return ResponseEntity.ok(res);
     }
 
-    @PostMapping("/{issueId}/assignee/{userId}")
+    @PutMapping("/{issueId}/assignee/{userId}")
     public ResponseEntity<Issue>addUserToIssue(@PathVariable Long issueId,
                                                 @PathVariable Long userId)
         throws Exception{
         Issue issue = issueService.adddUserToIssue(issueId, userId);
-
         return ResponseEntity.ok(issue);
-
     }
 
+//    public ResponseEntity<List<Issue>>getIssuesByAssigneeId(@PathVariable Long assigneeId)
+//        throws Exception{
+//
+//    }
+    @PutMapping("{issueId}/status/{status}")
     public ResponseEntity<Issue>updateIssueStatus(
             @PathVariable String status,
             @PathVariable Long issueId) throws Exception{

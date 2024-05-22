@@ -6,10 +6,11 @@ import com.ashu.modal.User;
 import com.ashu.repository.MessageRepository;
 import com.ashu.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.List;
-
+@Service
 public class MessageServiceImpl implements MessageService{
 
     @Autowired

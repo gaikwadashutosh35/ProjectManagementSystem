@@ -5,7 +5,6 @@ import com.ashu.modal.User;
 import com.ashu.request.IssueRequest;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface IssueService {
 

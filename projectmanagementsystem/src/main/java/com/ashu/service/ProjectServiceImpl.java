@@ -13,16 +13,12 @@ import java.util.stream.Collectors;
 
 @Service
 public class ProjectServiceImpl implements ProjectService{
-
     @Autowired
     private ProjectRepository projectRepository;
-
     @Autowired
     private UserService userService;
-
     @Autowired
     private ChatService chatService;
-
     @Override
     public Project createProject(Project project, User user) throws Exception {
         Project createdProject = new Project();
@@ -43,8 +39,6 @@ public class ProjectServiceImpl implements ProjectService{
         savedProject.setChat(projectChat);
 
         return savedProject;
-
-
     }
 
     @Override
@@ -78,19 +72,18 @@ public class ProjectServiceImpl implements ProjectService{
     public void deleteProject(Long projectId, Long userId) throws Exception {
 
         getProjectById(projectId);
-//        userService.f
         projectRepository.deleteById(projectId);
     }
 
 
     @Override
-    public Project updateProject(Project updateProject, Long id) throws Exception {
+    public Project updateProject(Project updatedProject, Long id) throws Exception {
 
         Project project = getProjectById(id);
 
-        project.setName(updateProject.getName());
-        project.setDescription(updateProject.getDescription());
-        project.setTags(updateProject.getTags());
+        project.setName(updatedProject.getName());
+        project.setDescription(updatedProject.getDescription());
+        project.setTags(updatedProject.getTags());
         return projectRepository.save(project);
     }
 

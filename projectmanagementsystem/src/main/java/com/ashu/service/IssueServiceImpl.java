@@ -6,18 +6,18 @@ import com.ashu.modal.User;
 import com.ashu.repository.IssueRepository;
 import com.ashu.request.IssueRequest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class IssueServiceImpl implements IssueService{
 
     @Autowired
     private IssueRepository issueRepository;
-
     @Autowired
     private ProjectService projectService;
-
     @Autowired
     private UserService userService;
     @Override
@@ -42,7 +42,7 @@ public class IssueServiceImpl implements IssueService{
         issue.setTitle(issueRequest.getTitle());
         issue.setDescription(issueRequest.getDescription());
         issue.setStatus(issueRequest.getStatus());
-        issue.setProjectId(issue.getProjectId());
+        issue.setProjectID(issue.getProjectID());
         issue.setPriority(issueRequest.getPriority());
         issue.setDueDate(issueRequest.getDueDate());
 
