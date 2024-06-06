@@ -98,6 +98,7 @@ This project uses the following main dependencies:
 
 ## Contributing
 Contributions are welcome! Please follow these steps to contribute:
+
 ---
 - Fork the repository.
 - Create a new branch: `git checkout -b my-feature-branch`.
