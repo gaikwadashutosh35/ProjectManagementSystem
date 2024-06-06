@@ -24,8 +24,9 @@ To set up the project locally, follow these steps:
    git clone https://github.com/gaikwadashutosh35/ProjectManagementSystem.git
 
    
-2.**Navigate to the project directory:**
-
+2. **Navigate to the project directory:**
+   ```bash
+   cd your-repository
 
 
 3. **Install dependencies:**
@@ -33,10 +34,11 @@ To set up the project locally, follow these steps:
     ```bash
     npm install
 
-##**Usage**
+## Usage
+
 To run the application locally, use the following command:
-    
-    ```bash
-     npm start
+```bash
+npm start
+
 
 This will start the development server and open the application in your default browser. If it doesn't open automatically, navigate to http://localhost:3000
