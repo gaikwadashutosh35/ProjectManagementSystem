@@ -81,32 +81,29 @@ Here is a brief overview of the project's folder structure:
 
 In the project directory, you can run:
 
----
 - `npm start`: Runs the app in the development mode.
 - `npm test`: Launches the test runner in the interactive watch mode.
 - `npm run build`: Builds the app for production to the build folder.
 - `npm run eject`: Removes the single build dependency from your project. 
---- 
+
 
 ## Dependencies
 
 This project uses the following main dependencies:
 
----
 - **React**: A JavaScript library for building user interfaces.
 - **react-router-dom:** Declarative routing for React applications.
 - **react-hook-form:** A performant, flexible, and extensible form library for React.
----
+
 
 ## Contributing
 
 Contributions are welcome! Please follow these steps to contribute:
 
----
 - Fork the repository.
 - Create a new branch: `git checkout -b my-feature-branch`.
 - Make your changes and commit them: `git commit -m 'Add new feature'`.
 - Push to the branch: `git push origin my-feature-branch`.
 - Submit a pull request.
----
+
 
