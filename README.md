@@ -1,4 +1,4 @@
-# Project Management System
+# Project Management System(Frontend Part)
 
 ## Overview
 
@@ -106,6 +106,54 @@ Contributions are welcome! Please follow these steps to contribute:
 3. Make your changes and commit them: `git commit -m 'Add new feature'`.
 4. Push to the branch: `git push origin my-feature-branch`.
 5. Submit a pull request.
+
+# Project Management System(Backend Part)
+
+## Introduction
+This is a comprehensive Project Management System designed to help teams manage their projects efficiently. The system includes features for task management, team collaboration, and project tracking.
+
+## Features
+- Task Creation and Assignment
+- Project Timeline Management
+- Team Collaboration Tools
+- Progress Tracking
+- User Authentication
+
+## Technologies Used
+- Java
+- Spring Boot
+- Hibernate
+- MySQL
+- Thymeleaf
+
+## Installation
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/gaikwadashutosh35/ProjectManagementSystem.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd ProjectManagementSystem/projectmanagementsystem
+    ```
+3. Configure the MySQL database in `application.properties`.
+4. Run the application:
+    ```bash
+    mvn spring-boot:run
+    ```
+
+## Usage
+1. Open your browser and navigate to `http://localhost:8080`.
+2. Register a new account or log in with existing credentials.
+3. Start creating and managing your projects.
+
+## Contributing
+Contributions are welcome! Please create an issue or submit a pull request.
+
+## License
+This project is licensed under the MIT License.
+
+## Contact
+For any inquiries, please contact [Ashutosh Gaikwad](mailto:gaikwadashutosh35@gmail.com).
 
 ## License
 
