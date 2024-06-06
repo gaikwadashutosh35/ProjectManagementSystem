@@ -12,7 +12,8 @@ This project is a Project Management System built using React for the frontend a
 - [Available Scripts](#available-scripts)
 - [Dependencies](#dependencies)
 - [Contributing](#contributing)
-
+- [License](#license)
+  
 ## Installation
 
 To set up the project locally, follow these steps:
@@ -100,10 +101,12 @@ This project uses the following main dependencies:
 
 Contributions are welcome! Please follow these steps to contribute:
 
-- Fork the repository.
-- Create a new branch: `git checkout -b my-feature-branch`.
-- Make your changes and commit them: `git commit -m 'Add new feature'`.
-- Push to the branch: `git push origin my-feature-branch`.
-- Submit a pull request.
+1. Fork the repository.
+2. Create a new branch: `git checkout -b my-feature-branch`.
+3. Make your changes and commit them: `git commit -m 'Add new feature'`.
+4. Push to the branch: `git push origin my-feature-branch`.
+5. Submit a pull request.
 
+## License
 
+This project is licensed under the MIT License. See the [LICENSE](../LICENSE) file for more details.
