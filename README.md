@@ -25,20 +25,22 @@ To set up the project locally, follow these steps:
 
    
 2. **Navigate to the project directory:**
+   
    ```bash
    cd your-repository
 
 
-3. **Install dependencies:**
+4. **Install dependencies:**
  
     ```bash
     npm install
 
 ## Usage
-
 To run the application locally, use the following command:
-```bash
-npm start
+	
+   ```bash
+ 	npm start
+		
 
-
-This will start the development server and open the application in your default browser. If it doesn't open automatically, navigate to http://localhost:3000
+## Folder Structure
+Here is a brief overview of the project's folder structure:
