@@ -4,6 +4,16 @@
 
 This project is a Project Management System built using React for the frontend and includes various pages such as Home, Project Details, Issue Details, Subscription, and an authentication system with signup and login forms.
 
+## Features
+
+- 🚀 **Project Creation**: Users can create and manage projects seamlessly.
+- 📧 **User Invitations**: Invite team members via email for project collaboration.
+- 💬 **Real-Time Chat**: Instant communication among team members for effective collaboration.
+- 💳 **Subscription Plans**: Manage project limits with free, monthly, and annual subscription options.
+- 🔒 **Security**: Utilizes Spring Security and JWT for secure authentication.
+- 🛠️ **Modern Design**: Implemented with Tailwind CSS for a responsive and user-friendly interface.
+
+
 ## Table of Contents
 
 - [Installation](#installation)
