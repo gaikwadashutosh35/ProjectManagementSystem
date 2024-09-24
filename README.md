@@ -13,6 +13,17 @@ This project is a Project Management System built using React for the frontend a
 - 🔒 **Security**: Utilizes Spring Security and JWT for secure authentication.
 - 🛠️ **Modern Design**: Implemented with Tailwind CSS for a responsive and user-friendly interface.
 
+## Key Insights
+
+- 💻 **Seamless User Experience**: The project highlights the importance of integrating both front-end (React) and back-end (Spring Boot) technologies to deliver a cohesive user experience.
+- 🔗 **Enhanced Collaboration**: User invitations facilitate easy project onboarding for team members, promoting effective teamwork and communication.
+- 💵 **Scalable Subscription Plans**: These plans allow users to manage project limits based on their needs, driving higher engagement.
+- 🔒 **Data Security**: The implementation of JWT and Spring Security safeguards user data and restricts access to authenticated users.
+- 📦 **Modern Design**: Utilizing Tailwind CSS and Shadcn UI enhances the aesthetics and usability of the application.
+- 📈 **Instant Communication**: Real-time chat capabilities are crucial for efficient project management and quick issue resolution.
+- 🔍 **Usability and Efficiency**: The ability to filter and search projects by various criteria improves task management and overall user experience.
+
+
 
 ## Table of Contents
 
